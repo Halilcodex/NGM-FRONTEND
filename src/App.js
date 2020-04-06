@@ -1,11 +1,15 @@
 import React from "react";
-import "./App.css";
+import Router from "./router";
+import { CookiesProvider } from "react-cookie";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
 
 const App = () => {
   return (
-    <div className="main-home">
-      <h2>Welcome to Nasir Giwa's Mentee Website</h2>
-    </div>
+    <CookiesProvider>
+      <Router />
+    </CookiesProvider>
   );
 };
 
