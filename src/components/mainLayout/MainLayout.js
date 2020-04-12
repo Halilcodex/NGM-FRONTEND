@@ -18,8 +18,8 @@ function MainLayout(props) {
             <Nav.Link>Home</Nav.Link>
           </Nav.Item>
           <Nav.Link>About</Nav.Link>
-          <Nav.Link>Members</Nav.Link>
-          <Nav.Link>Gallery</Nav.Link>
+          <Nav.Link href="/Members">Members</Nav.Link>
+          <Nav.Link href="/Gallery">Gallery</Nav.Link>
         </Nav>
       </Navbar>
       {props.children}
