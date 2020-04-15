@@ -1,6 +1,35 @@
 .home-container {
-  margin-top: 20px;
-  h1 {
-    text-align: center;
+
+  .carousel-container {
+    .carousel-inner {
+      max-height: 700px;
+    }
+
+    .carousel-item {
+      img {
+        height: 400px;
+      }
+
+      .img-div {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 70vh;
+      }
+    }
   }
+
+  .profile-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    background-color: rgba(229, 229, 229, 0.17);
+
+    .the-mentor {
+      width: 500px;
+    }
+
+  }
+
 }
