@@ -22,8 +22,12 @@ function MainLayout(props) {
           <Link to="/">
             <Nav.Link href="/">Home</Nav.Link>
           </Link>
-          <Nav.Link>Gallery</Nav.Link>
-          <Nav.Link>Members</Nav.Link>
+          <Link to="/gallery">
+            <Nav.Link href="/gallery">Gallery</Nav.Link>
+          </Link>
+          <Link to="/members">
+            <Nav.Link href="/members">Members</Nav.Link>
+          </Link>
           <Link to="/about">
             <Nav.Link href="/about">About</Nav.Link>
           </Link>
