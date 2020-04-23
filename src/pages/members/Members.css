@@ -25,16 +25,25 @@
 	margin: 100px;
 }
 
-.member-row {
-	width: 50%;
-	margin: 100px auto 100px auto;
-	text-align: left;
+hr.style13 {
+	height: 10px;
+	width: 15%;
+	justify-content: center;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-.members h2 {
+.member-row {
+	width: 50%;
+	margin: 100px auto;
 	text-align: center;
 }
 
+.member-row h3,p {
+	padding: 10px auto;
+}
+
+/*
 .member-left {
 	width: 25%;
 	float: left;
@@ -47,4 +56,19 @@
 	float: right;
 	margin-left: 30px;
 	border-radius: 100%;
+}
+*/
+
+.member-img {
+	border-radius: 100%;
+	padding: 50px;
+}
+
+.hovered {
+	font-size: 2rem;
+
+}
+
+#button-tooltip {
+	background-color: white;
 }
