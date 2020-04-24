@@ -1,0 +1,24 @@
+.about-container {
+    .about-bg {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            color: #f1f1f1;
+        }
+    }
+
+    .about-text {
+        width: 70vw;
+        margin: 0 auto;
+
+        p {
+            text-align: justify;
+        }
+    }
+}

@@ -1,87 +1,101 @@
-import React from "react";
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import "./Home.css";
+import pic from "../../assets/pic1.jpg";
+import pic2 from "../../assets/pic2.jpg";
+import pic3 from "../../assets/pic3.jpg";
+import mentor from "../../assets/unsplash.jpg";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
 
 function Home() {
-  return (
-    <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
-        
-        
-        
-        
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                <div class="carousel-caption text-left">
-                    <h1>Example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                <div class="carousel-caption text-right">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                </div>
-                </div>
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
+  const [index, setIndex] = useState(0);
 
-        <div class="container contact-form">
-            <form method="post">
-                <h3>Drop Us a Message</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style={{width: '100%', height: '150'}}></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <div className="home-container">
+      <section className="carousel-container">
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Carousel.Item>
+            <div
+              className="img-div"
+              style={{ backgroundImage: `url(${pic})` }}
+            ></div>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div
+              className="img-div"
+              style={{ backgroundImage: `url(${pic2})` }}
+            ></div>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div
+              className="img-div"
+              style={{ backgroundImage: `url(${pic3})` }}
+            ></div>
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </section>
+      <br />
+      <div className="divider" />
+      <section className="profile-section">
+        <div className="profile-details">
+          <h4>Meet The Mentor</h4>
+          <p>Nasirudeen Olasanmi Giwa</p>
+          <p className="details">
+            Experienced General Manager with a demonstrated history of working
+            in the electrical and electronic manufacturing industry. Skilled in
+            Negotiation, Budgeting, Petroleum, Gas, and Microsoft Word. Strong
+            operations professional with a Bachelor of Engineering (B.Eng.)
+            focused in Electrical Engineering from University of Ilorin.
+          </p>
         </div>
+        <div
+          className="profile-pic"
+          style={{ backgroundImage: `url(${mentor})` }}
+        />
+      </section>
+      <br />
+      <div className="divider" />
+      <section className="contact-us">
+        <h4>Contact Us</h4>
+        <Form>
+          <Form.Group as={Row}>
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="text" placeholder="Name" />
+          </Form.Group>
+          <Form.Group as={Row} controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+
+          <Form.Group as={Row} controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control as="textarea" rows="3" />
+          </Form.Group>
+          <Button className="submit" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </section>
     </div>
   );
 }

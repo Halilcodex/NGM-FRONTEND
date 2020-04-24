@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
+import MainLayout from "./components/mainLayout/MainLayout";
+import About from "./pages/about/About";
 import Members from "./pages/members/Members";
 import Gallery from "./pages/gallery/Gallery";
-import MainLayout from "./components/mainLayout/MainLayout";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
           component={(props) => (
             <MainLayout {...props}>
               <Route path="/" exact component={Home} />
+              <Route path="/about" exact component={About} />
               <Route path="/Members" exact component={Members} />
               <Route path="/Gallery" exact component={Gallery} />
             </MainLayout>
