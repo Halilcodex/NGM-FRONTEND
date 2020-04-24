@@ -12,7 +12,6 @@ function MainLayout(props) {
     <div className="mainlayout">
       <Navbar className="my-navbar" variant="light">
         <Navbar.Brand>
-          {/* <img className="logo" src={ngmLogo} alt="NGM" /> */}
           <div
             className="logo"
             style={{ backgroundImage: `url(${ngmLogo})` }}

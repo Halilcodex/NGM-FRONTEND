@@ -3,6 +3,11 @@
     justify-content: space-evenly;
     background-color: #253526;
 
+    .nav-link {
+      // color: rgba(37, 53, 38, 0.85) !important;
+      color: rgba(138, 138, 138, 0.85) !important;
+    }
+
     .logo {
       width: 50px;
       height: 30px;
@@ -12,3 +17,5 @@
     }
   }
 }
+
+// background-color:;
