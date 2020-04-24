@@ -1,0 +1,37 @@
+.members-container {
+  p {
+    line-height: 2;
+  }
+
+  .cover-container {
+    max-width: 100%;
+  }
+
+  .members {
+    margin: 100px;
+  }
+
+  .member-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+  }
+
+  .members h2 {
+    text-align: center;
+  }
+
+  .member-left {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 100%;
+  }
+
+  .member-right {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 100%;
+  }
+}
