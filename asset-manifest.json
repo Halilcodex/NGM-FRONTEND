@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/.github.io/NGM-FRONTEND/static/css/main.d7953084.chunk.css",
+    "main.js": "/.github.io/NGM-FRONTEND/static/js/main.bfae34a5.chunk.js",
+    "main.js.map": "/.github.io/NGM-FRONTEND/static/js/main.bfae34a5.chunk.js.map",
+    "runtime-main.js": "/.github.io/NGM-FRONTEND/static/js/runtime-main.5505bbba.js",
+    "runtime-main.js.map": "/.github.io/NGM-FRONTEND/static/js/runtime-main.5505bbba.js.map",
+    "static/css/2.de424728.chunk.css": "/.github.io/NGM-FRONTEND/static/css/2.de424728.chunk.css",
+    "static/js/2.a12abca1.chunk.js": "/.github.io/NGM-FRONTEND/static/js/2.a12abca1.chunk.js",
+    "static/js/2.a12abca1.chunk.js.map": "/.github.io/NGM-FRONTEND/static/js/2.a12abca1.chunk.js.map",
+    "index.html": "/.github.io/NGM-FRONTEND/index.html",
+    "precache-manifest.28aa5db9acae83651956ce95d736e7b6.js": "/.github.io/NGM-FRONTEND/precache-manifest.28aa5db9acae83651956ce95d736e7b6.js",
+    "service-worker.js": "/.github.io/NGM-FRONTEND/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/.github.io/NGM-FRONTEND/static/css/2.de424728.chunk.css.map",
+    "static/css/main.d7953084.chunk.css.map": "/.github.io/NGM-FRONTEND/static/css/main.d7953084.chunk.css.map",
+    "static/js/2.a12abca1.chunk.js.LICENSE.txt": "/.github.io/NGM-FRONTEND/static/js/2.a12abca1.chunk.js.LICENSE.txt",
+    "static/media/NGM-logo-3.png": "/.github.io/NGM-FRONTEND/static/media/NGM-logo-3.084d1f3d.png",
+    "static/media/about.jpg": "/.github.io/NGM-FRONTEND/static/media/about.e1956d61.jpg",
+    "static/media/pic1.jpg": "/.github.io/NGM-FRONTEND/static/media/pic1.63267161.jpg",
+    "static/media/pic2.jpg": "/.github.io/NGM-FRONTEND/static/media/pic2.faa0dbda.jpg",
+    "static/media/pic3.jpg": "/.github.io/NGM-FRONTEND/static/media/pic3.e2758a59.jpg",
+    "static/media/unsplash.jpg": "/.github.io/NGM-FRONTEND/static/media/unsplash.c8a3f547.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5505bbba.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.a12abca1.chunk.js",
+    "static/css/main.d7953084.chunk.css",
+    "static/js/main.bfae34a5.chunk.js"
+  ]
+}
