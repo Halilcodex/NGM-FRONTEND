@@ -18,7 +18,7 @@ function Members() {
           .map((v, i) => (
             <>
               <OverlayTrigger
-                trigger="click"
+                trigger="hover"
                 key={i}
                 placement={"bottom"}
                 overlay={
