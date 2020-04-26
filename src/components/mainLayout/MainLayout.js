@@ -46,11 +46,11 @@ function MainLayout(props) {
       <section className="ngm-main-content">{props.children}</section>
       <footer className="footer">
         <div className="footer-content">
-          <div className="about col-md-3">
+          <div className="about col-md-4">
             <h5>About</h5>
             <p>
               lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              {/* ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum */}
             </p>
           </div>
           <div className="quick-links col-md-3">
