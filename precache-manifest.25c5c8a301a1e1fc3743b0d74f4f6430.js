@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89d65555f80de7b2974fb6c2897673a4",
+    "revision": "e402efe8c859d4275f5c2b7bdba9bdf1",
     "url": "/NGM-FRONTEND/index.html"
   },
   {
-    "revision": "cc53b7c5fad9874faf52",
+    "revision": "d4b4deed525127ae6f4b",
     "url": "/NGM-FRONTEND/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "090dcf7b76955f08c910",
-    "url": "/NGM-FRONTEND/static/css/main.13d386f8.chunk.css"
+    "revision": "82cb86efaa8c6945b48b",
+    "url": "/NGM-FRONTEND/static/css/main.fce6d3ba.chunk.css"
   },
   {
-    "revision": "cc53b7c5fad9874faf52",
-    "url": "/NGM-FRONTEND/static/js/2.43bb9c5d.chunk.js"
+    "revision": "d4b4deed525127ae6f4b",
+    "url": "/NGM-FRONTEND/static/js/2.94c4adde.chunk.js"
   },
   {
     "revision": "f576af3254df0679363d3e6ffe804e36",
-    "url": "/NGM-FRONTEND/static/js/2.43bb9c5d.chunk.js.LICENSE.txt"
+    "url": "/NGM-FRONTEND/static/js/2.94c4adde.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "090dcf7b76955f08c910",
-    "url": "/NGM-FRONTEND/static/js/main.9d405075.chunk.js"
+    "revision": "82cb86efaa8c6945b48b",
+    "url": "/NGM-FRONTEND/static/js/main.b591bd00.chunk.js"
   },
   {
     "revision": "34bd51e7d7610bd32eb3",
