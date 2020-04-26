@@ -22,7 +22,7 @@
   .divider {
     border: 1px solid #f1f1f1;
     width: 50vw;
-    margin: 0 auto;
+    margin: 2rem auto;
     box-shadow: 1px 2px #f5f5f5;
   }
 
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
-    background-color: rgba(229, 229, 229, 0.17);
+    // background-color: rgba(229, 229, 229, 0.17);
 
     .profile-details {
       max-width: 300px;
@@ -56,6 +56,20 @@
 
     .submit {
       background-color: #253526;
+    }
+  }
+}
+
+/* Responsiveness for the Mainlayout */
+@media screen and (max-width: 768px) {
+  .home-container {
+    .profile-section {
+      flex-direction: column;
+      align-items: center;
+
+      .profile-details {
+        max-width: unset;
+      }
     }
   }
 }

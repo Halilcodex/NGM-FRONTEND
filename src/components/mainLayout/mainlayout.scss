@@ -1,7 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+
 .mainlayout {
   .my-navbar {
-    justify-content: space-evenly;
     background-color: #253526;
+
+    @media screen and (min-width:900px) {
+      padding: 0 250px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 0 400px
+    }
 
     .nav-link {
       // color: rgba(37, 53, 38, 0.85) !important;
@@ -16,6 +28,61 @@
       background-repeat: no-repeat;
     }
   }
+
+
+  .ngm-main-content {
+    min-height: 90vh;
+  }
+
+
+  .footer {
+    position: relative;
+    height: 200px;
+    background-color: #253526;
+    width: 100%;
+    display: flex;
+
+    .footer-content {
+      display: flex;
+      flex-grow: 1;
+      margin: 0 auto;
+      max-width: 90%;
+      // align-items: center;
+      justify-content: space-evenly;
+      padding: 20px 0;
+
+      h5 {
+        color: #f1f1f1;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p,
+      li {
+        color: rgba(138, 138, 138, 0.85)
+      }
+    }
+
+    .footer-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      background-color: #5a6d5e;
+      padding: 3px;
+    }
+  }
 }
 
-// background-color:;
+/* Responsiveness for the Mainlayout */

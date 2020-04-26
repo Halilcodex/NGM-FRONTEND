@@ -8,7 +8,7 @@ import Gallery from "./pages/gallery/Gallery";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route
           path="/"

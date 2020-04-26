@@ -8,6 +8,7 @@ import mentor from "../../assets/unsplash.jpg";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -54,9 +55,9 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </section>
-      <br />
       <div className="divider" />
-      <section className="profile-section">
+      {/* <section className="profile-section"> */}
+      <Jumbotron className="profile-section">
         <div className="profile-details">
           <h4>Meet The Mentor</h4>
           <p>Nasirudeen Olasanmi Giwa</p>
@@ -72,8 +73,8 @@ function Home() {
           className="profile-pic"
           style={{ backgroundImage: `url(${mentor})` }}
         />
-      </section>
-      <br />
+      </Jumbotron>
+      {/* </section> */}
       <div className="divider" />
       <section className="contact-us">
         <h4>Contact Us</h4>
