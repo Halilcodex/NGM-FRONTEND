@@ -9,6 +9,9 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Icon from "react-icons-kit";
+import { chevronCircleRight } from "react-icons-kit/fa/chevronCircleRight";
+import { chevronCircleLeft } from "react-icons-kit/fa/chevronCircleLeft";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -16,11 +19,18 @@ function Home() {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+  const nextIcon = <Icon icon={chevronCircleRight} size={40} />;
+  const prevIcon = <Icon icon={chevronCircleLeft} size={40} />;
 
   return (
     <div className="home-container">
       <section className="carousel-container">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel
+          nextIcon={nextIcon}
+          activeIndex={index}
+          prevIcon={prevIcon}
+          onSelect={handleSelect}
+        >
           <Carousel.Item>
             <div
               className="img-div"
