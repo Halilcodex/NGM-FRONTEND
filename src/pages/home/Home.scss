@@ -2,6 +2,10 @@
   .carousel-container {
     .carousel-inner {
       max-height: 700px;
+
+      .carousel-caption {
+        font-weight: bolder;
+      }
     }
 
     .carousel-item {

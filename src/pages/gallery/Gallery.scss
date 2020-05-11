@@ -1,100 +1,63 @@
-/*
- * Globals
- */
-
-/* Links */
 .gallery-container {
   .carousel-container {
     .carousel {
       margin-bottom: unset;
     }
+
     .carousel-inner {
       max-height: 93.4vh;
       height: 100vh;
     }
+
     .carousel-item {
       height: 95vh;
+
       .img-div {
         height: 100vh;
       }
     }
   }
 
-  a,
-  a:focus,
-  a:hover {
-    color: #fff;
-  }
+  .story-in-images {
+    .story-image {
+      width: 100%;
+      height: 50vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  /* Custom default button */
-  .btn-secondary,
-  .btn-secondary:hover,
-  .btn-secondary:focus {
-    color: #333;
-    text-shadow: none;
-    /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: 0.05rem solid #fff;
-  }
-
-  /*
- * Base structure
- */
-
-  p {
-    line-height: 2;
-  }
-
-  .cover-container {
-    max-width: 100%;
-  }
-
-  /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-  /* Carousel base class */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 42rem;
-  }
-
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
-
-  /* RESPONSIVE CSS
--------------------------------------------------- */
-
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-
-    .featurette-heading {
-      font-size: 50px;
+      h1 {
+        color: black;
+      }
     }
   }
 
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
+  .stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+    justify-items: center;
+
+    img {
+      width: 400px;
+      max-height: 400px;
+    }
+
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    iframe {
+      width: 60vw;
+      height: 500px;
     }
   }
 }
