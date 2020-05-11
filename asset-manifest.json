@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NGM-FRONTEND/static/css/main.3ad5e540.chunk.css",
+    "main.css": "/NGM-FRONTEND/static/css/main.4f95e2cf.chunk.css",
     "main.js": "/NGM-FRONTEND/static/js/main.26ba85ca.chunk.js",
     "main.js.map": "/NGM-FRONTEND/static/js/main.26ba85ca.chunk.js.map",
     "runtime-main.js": "/NGM-FRONTEND/static/js/runtime-main.6c2d2a13.js",
@@ -9,10 +9,10 @@
     "static/js/2.09181a02.chunk.js": "/NGM-FRONTEND/static/js/2.09181a02.chunk.js",
     "static/js/2.09181a02.chunk.js.map": "/NGM-FRONTEND/static/js/2.09181a02.chunk.js.map",
     "index.html": "/NGM-FRONTEND/index.html",
-    "precache-manifest.da87ad6d665047e0b6f5fea86cc02ac9.js": "/NGM-FRONTEND/precache-manifest.da87ad6d665047e0b6f5fea86cc02ac9.js",
+    "precache-manifest.79bf046fbe8bb5730ab6ebe9d4814706.js": "/NGM-FRONTEND/precache-manifest.79bf046fbe8bb5730ab6ebe9d4814706.js",
     "service-worker.js": "/NGM-FRONTEND/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/NGM-FRONTEND/static/css/2.de424728.chunk.css.map",
-    "static/css/main.3ad5e540.chunk.css.map": "/NGM-FRONTEND/static/css/main.3ad5e540.chunk.css.map",
+    "static/css/main.4f95e2cf.chunk.css.map": "/NGM-FRONTEND/static/css/main.4f95e2cf.chunk.css.map",
     "static/js/2.09181a02.chunk.js.LICENSE.txt": "/NGM-FRONTEND/static/js/2.09181a02.chunk.js.LICENSE.txt",
     "static/media/NGM-logo-3.png": "/NGM-FRONTEND/static/media/NGM-logo-3.084d1f3d.png",
     "static/media/about.jpg": "/NGM-FRONTEND/static/media/about.e1956d61.jpg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.6c2d2a13.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.09181a02.chunk.js",
-    "static/css/main.3ad5e540.chunk.css",
+    "static/css/main.4f95e2cf.chunk.css",
     "static/js/main.26ba85ca.chunk.js"
   ]
 }

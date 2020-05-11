@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3939a1db4548e9f1d731e397bf631dc6",
+    "revision": "e430f035661f5d30fb9a3d8d2ac94f3c",
     "url": "/NGM-FRONTEND/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NGM-FRONTEND/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "0d1614ba6652efa181a4",
-    "url": "/NGM-FRONTEND/static/css/main.3ad5e540.chunk.css"
+    "revision": "9d96d36656badcd4460e",
+    "url": "/NGM-FRONTEND/static/css/main.4f95e2cf.chunk.css"
   },
   {
     "revision": "20e73947430138bfef2a",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NGM-FRONTEND/static/js/2.09181a02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d1614ba6652efa181a4",
+    "revision": "9d96d36656badcd4460e",
     "url": "/NGM-FRONTEND/static/js/main.26ba85ca.chunk.js"
   },
   {
