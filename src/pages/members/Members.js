@@ -1,51 +1,65 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
 import "./Members.css";
 import Image from "react-bootstrap/Image";
-import pic1 from "../../assets/pic1.jpg";
-import Button from "react-bootstrap/Button";
 import Popover from "react-bootstrap/Popover";
+import Axios from "axios";
+import Skeleton from "react-loading-skeleton";
 
 function Members() {
+  const membersUrl =
+    "https://ngm-backend-api-test.herokuapp.com/read_member.php";
+  const [members, setMembers] = useState([]);
+  const [loader, setLoader] = useState(true);
+
+  const getNGMembers = () => {
+    Axios.get(membersUrl)
+      .then((res) => {
+        setMembers(res.data.members_records);
+        setLoader(false);
+      })
+      .catch((err) => {});
+  };
+
+  useEffect(() => {
+    getNGMembers();
+  }, []);
+
   return (
     <div className="members-container">
       <h2>NGM MEMBERS</h2>
       <hr />
       <section className="members-section">
-        {Array(6)
-          .fill(null)
-          .map((v, i) => (
-            <>
-              <OverlayTrigger
-                trigger="hover"
-                key={i}
-                placement={"bottom"}
-                overlay={
-                  <Popover id={`image-${i}`}>
-                    <Popover.Title as="h3">{`Charles Robertson`}</Popover.Title>
-                    <Popover.Content>
-                      Nasir is a very intelligent and articulate
-                      scientist/engineer. His career has traversed strategic
-                      platform in energy & gas, project management, research,
-                      team management and a host of others. It's a success story
-                      all the way in his professional career. His knack for
-                      details, results and success stands him out among his
-                      peers locally and internationally. Recommended by Balogun
-                      Ismaila Transport & Logistics Consultant (Chartered)
-                    </Popover.Content>
-                  </Popover>
-                }
-              >
-                <Image
-                  className="member-img"
-                  key={i}
-                  src={pic1}
-                  roundedCircle
-                />
-              </OverlayTrigger>{" "}
-            </>
-          ))}
+        {loader
+          ? Array(6)
+              .fill(null)
+              .map((v, i) => (
+                <Skeleton circle={true} width={300} height={300} />
+              ))
+          : members.map((item) => (
+              <>
+                <OverlayTrigger
+                  trigger={["focus", "hover", "click"]}
+                  key={item.id}
+                  placement={"bottom"}
+                  overlay={
+                    <Popover id={`image-${item.id}`}>
+                      <Popover.Title as="h3">{`${item.firstName} ${item.lastName}`}</Popover.Title>
+                      <Popover.Content>
+                        {item.member_profile_desc}
+                      </Popover.Content>
+                    </Popover>
+                  }
+                >
+                  <Image
+                    className="member-img"
+                    key={item.id}
+                    src={item.img_file}
+                    roundedCircle
+                  />
+                </OverlayTrigger>{" "}
+              </>
+            ))}
       </section>
     </div>
   );

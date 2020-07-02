@@ -4,7 +4,6 @@ import pic from "../../assets/pic1.jpg";
 import pic2 from "../../assets/pic2.jpg";
 import pic3 from "../../assets/pic3.jpg";
 import story from "../../assets/story.jpg";
-import unsplash2 from "../../assets/unsplash2.jpg";
 
 function Gallery() {
   return (
@@ -23,12 +22,13 @@ function Gallery() {
         <img src={pic3} alt="assets" />
         <img src={story} alt="assets" />
         <iframe
+          title="random video"
           width="400"
           height="315"
           src="https://www.youtube.com/embed/ZCFkWDdmXG8"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         {/* <img src={unsplash2} alt="assets" /> */}
         <img src={story} alt="assets" />
